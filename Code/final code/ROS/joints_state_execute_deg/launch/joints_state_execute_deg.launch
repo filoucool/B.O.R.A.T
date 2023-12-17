@@ -1,0 +1,4 @@
+<launch>
+    <node name="joints_state_execute_deg" pkg="joints_state_execute_deg" type="joints_state_execute_deg_node.py" output="screen" />
+</launch>
+

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: Borat_URDF_Config
+    relative_path: urdf/Borat_URDF_Config.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/Borat_URDF_Config.srdf
+  CONFIG:
+    author_name: Felix Chenette-Stewart
+    author_email: felix@nexumnet.com
+    generated_timestamp: 1681408533

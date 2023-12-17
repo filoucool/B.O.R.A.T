@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Borat_MoveIt_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.16463897526609E-05 0.00206445317296122 0.09075756862324"
+        rpy="0 0 0" />
+      <mass
+        value="1.13447955048954" />
+      <inertia
+        ixx="0.00382536743502923"
+        ixy="-5.21479626374467E-10"
+        ixz="2.64488701815579E-11"
+        iyy="0.00238349995413209"
+        iyz="-2.23095995120308E-08"
+        izz="0.00584445390155973" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.627450980392157 0.627450980392157 0.627450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1">
+    <inertial>
+      <origin
+        xyz="-0.584904807429956 0.453876787126515 -0.84927716583619"
+        rpy="0 0 0" />
+      <mass
+        value="3.45485333358939" />
+      <inertia
+        ixx="0.0287244399044521"
+        ixy="1.07716900681633E-05"
+        ixz="1.36471809579462E-05"
+        iyy="0.0104194299620773"
+        iyz="-0.00252304337513046"
+        izz="0.0275587652557441" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="fixed">
+    <origin
+      xyz="0.585022209380404 -0.370049921410799 1.21249999999741"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_2">
+    <inertial>
+      <origin
+        xyz="1.31465315811319E-06 0.048226181612691 0.335988235790635"
+        rpy="0 0 0" />
+      <mass
+        value="1.77408202340127" />
+      <inertia
+        ixx="0.085386382093851"
+        ixy="-5.25912990745446E-09"
+        ixz="-4.99637761320083E-07"
+        iyy="0.0818444958818263"
+        iyz="-0.00123956240616675"
+        izz="0.00760750680406489" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="fixed">
+    <origin
+      xyz="-0.585 0.32 -0.84"
+      rpy="0 0 0" />
+    <parent
+      link="Link_1" />
+    <child
+      link="Link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_3">
+    <inertial>
+      <origin
+        xyz="0.000208836867107098 0.0874778725922791 0.129951370216716"
+        rpy="0 0 0" />
+      <mass
+        value="2.67779587153478" />
+      <inertia
+        ixx="0.084522229238636"
+        ixy="-4.14018356467283E-06"
+        ixz="-0.000235025297986019"
+        iyy="0.0817978835290952"
+        iyz="-0.00235129151271093"
+        izz="0.00795596534739965" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="fixed">
+    <origin
+      xyz="1.06288581022684E-05 -0.0442500000000069 0.6288"
+      rpy="0 0 0" />
+    <parent
+      link="Link_2" />
+    <child
+      link="Link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_4">
+    <inertial>
+      <origin
+        xyz="0.0513990734103578 -0.00518487356130426 0.0678838912575537"
+        rpy="0 0 0" />
+      <mass
+        value="0.723954348626968" />
+      <inertia
+        ixx="0.00237253952171158"
+        ixy="1.33651820734314E-05"
+        ixz="-0.000180992792801661"
+        iyy="0.00260543587960669"
+        iyz="0.000131020867550343"
+        izz="0.00219330564024989" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="fixed">
+    <origin
+      xyz="-0.0555513662683569 0.0942500000000001 0.441994922367149"
+      rpy="0 0 0" />
+    <parent
+      link="Link_3" />
+    <child
+      link="Link_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="3.50406134330683E-06 -0.0514710678990726 0.0537561072488955"
+        rpy="0 0 0" />
+      <mass
+        value="0.557275942885759" />
+      <inertia
+        ixx="0.00243659305768385"
+        ixy="-2.59907774189762E-07"
+        ixz="1.66507356320488E-07"
+        iyy="0.00120246682971844"
+        iyz="0.000106158819586914"
+        izz="0.00187711508779141" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="fixed">
+    <origin
+      xyz="0.0549500000005697 0.055050000000012 0.10149999999993"
+      rpy="0 0 0" />
+    <parent
+      link="Link_4" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="4.38538094726937E-15 -6.32827124036339E-15 0.0115090583818271"
+        rpy="0 0 0" />
+      <mass
+        value="0.0911378688516541" />
+      <inertia
+        ixx="8.03512703439223E-05"
+        ixy="-3.10440722332783E-19"
+        ixz="3.47797188819465E-17"
+        iyy="8.03512703439221E-05"
+        iyz="-3.44218311846734E-17"
+        izz="0.000155898456351931" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.964705882352941 0.964705882352941 0.952941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Borat_MoveIt_URDF/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="fixed">
+    <origin
+      xyz="0 -0.0545106312063043 0.0960000000003101"
+      rpy="0 0 0" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

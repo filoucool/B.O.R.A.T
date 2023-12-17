@@ -1,0 +1,25 @@
+<launch>
+    <!-- Gripper Control Node -->
+    <node name="gripper_control_node" pkg="gripper_control" type="gripper_control_node.py" output="screen">
+    </node>
+ 
+    <!-- Rosserial Python Node -->
+    <node name="rosserial_python_node" pkg="rosserial_python" type="serial_node.py" output="screen" args="_port:=/dev/ttyACM0 _baud:=57600">
+    </node>
+
+	
+   <include file="../tf_to_rad/launch/tf_to_rad.launch" />
+
+   <include file="../rad_to_deg/launch/rad_to_deg.launch" />
+
+   <include file="../borat_urdf_moveit_config/launch/demo.launch" />
+
+   <include file="../joints_state_goal/launch/joints_state_goal.launch" />
+
+   <include file="../joints_state_execute/launch/joints_state_execute.launch" />
+
+   <include file="../joints_state_execute_deg/launch/joints_state_execute_deg.launch" />
+
+   <include file="../joints_state_execute_status/launch/joints_state_execute_status.launch" />
+
+</launch>

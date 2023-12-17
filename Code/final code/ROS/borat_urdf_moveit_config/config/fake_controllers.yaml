@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_Borat_Robot_Arm_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
+initial:  # Define initial robot poses.
+  - group: Borat_Robot_Arm
+    pose: All_Zeros

@@ -1,0 +1,3 @@
+<launch>
+    <node name="joints_state_execute" pkg="joints_state_execute" type="joints_state_execute_node.py" output="screen" />
+</launch>

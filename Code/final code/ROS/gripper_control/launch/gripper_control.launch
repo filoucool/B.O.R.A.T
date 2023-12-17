@@ -1,0 +1,4 @@
+<launch>
+    <node name="gripper_control_node" pkg="gripper_control" type="gripper_control_node.py" output="screen">
+    </node>
+</launch>
